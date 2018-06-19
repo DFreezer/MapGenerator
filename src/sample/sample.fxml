@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane layoutX="151.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="504.0" prefWidth="305.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="49.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.0" minWidth="10.0" prefWidth="256.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="coeff1Label" text="0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff2Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff3Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff4Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff5Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff6Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff7Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff8Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff9Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff10Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff11Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                        <Label fx:id="coeff12Label" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                        <Slider fx:id="sliderCoeff1" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" />
+                        <Slider fx:id="sliderCoeff2" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Slider fx:id="sliderCoeff3" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Slider fx:id="sliderCoeff4" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Slider fx:id="sliderCoeff5" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Slider fx:id="sliderCoeff6" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Slider fx:id="sliderCoeff7" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Slider fx:id="sliderCoeff8" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Slider fx:id="sliderCoeff9" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Slider fx:id="sliderCoeff10" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Slider fx:id="sliderCoeff11" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Slider fx:id="sliderCoeff12" blockIncrement="0.1" majorTickUnit="0.1" max="5.0" min="-5.0" minorTickCount="1" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="111.0" prefWidth="305.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="59.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="92.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="47.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="116.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="xCoeff" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label text="yCoeff" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label text="Degree" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <TextField GridPane.columnIndex="1" fx:id="xCoeffInputField" />
+                        <TextField fx:id="yCoeffInputField" GridPane.columnIndex="3" />
+                        <TextField fx:id="degreeInputField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="seed" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <TextField fx:id="seedInputField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label text="Height" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label text="Width" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <TextField fx:id="heightInputField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="widthInputField" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#generateMap" text="Generate" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <Canvas fx:id="canvas" height="400.0" width="400.0" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <ProgressBar fx:id="progressBar" prefHeight="18.0" prefWidth="808.0" progress="0.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
